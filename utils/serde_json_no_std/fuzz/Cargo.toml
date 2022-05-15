@@ -10,7 +10,10 @@ cargo-fuzz = true
 
 [dependencies]
 libfuzzer-sys = "0.3"
-serde_json = { path = ".." }
+serde = "*"
+serde_json = "*"
+
+# serde_json = { path = ".." }
 
 [[bin]]
 name = "from_slice"
